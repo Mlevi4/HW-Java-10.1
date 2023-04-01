@@ -47,4 +47,21 @@ public class Radio {
         }
         this.currentVolume = currentVolume;
     }
+
+    public void nextVolume() {
+        if (currentVolume != 99) {
+            currentVolume++;
+            return;
+        } else {
+            currentVolume = 99;
+        }
+    }
+
+    public void prevVolume() {
+        if (currentVolume != 0) {
+            currentVolume--;
+        } else {
+            currentVolume = 0;
+        }
+    }
 }
